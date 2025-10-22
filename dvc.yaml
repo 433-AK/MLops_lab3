@@ -1,0 +1,12 @@
+stages:
+  preprocess:
+    cmd: python preprocess.py
+    deps:
+      - preprocess.py
+    outs:
+      - data/preprocessed_beed.csv
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+      - data/preprocessed_beed.csv
