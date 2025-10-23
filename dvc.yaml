@@ -20,3 +20,8 @@ stages:
     deps:
       - train_autolog_lgbm.py
       - data/preprocessed_beed.csv
+  tune:
+    cmd: python tune.py
+    deps:
+      - tune.py
+      - data/preprocessed_beed.csv

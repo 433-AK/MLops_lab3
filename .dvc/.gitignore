@@ -3,3 +3,4 @@
 /cache
 /mlruns
 /model.joblib
+/.env
