@@ -10,3 +10,13 @@ stages:
     deps:
       - train.py
       - data/preprocessed_beed.csv
+  train_xgb:
+    cmd: python train_autolog_xgb.py
+    deps:
+      - train_autolog_xgb.py
+      - data/preprocessed_beed.csv
+  train_lgbm:
+    cmd: python train_autolog_lgbm.py
+    deps:
+      - train_autolog_lgbm.py
+      - data/preprocessed_beed.csv
